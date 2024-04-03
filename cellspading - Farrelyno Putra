@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    .table-1 {
+        width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+        flex: 1;
+    }
+    .table-1 td {
+        border: 1px solid;
+        position: absolute 1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+    }
+    .table-1 th {
+        background-color: aqua;
+        border: 1px solid;
+        text-align: left;
+        padding: 5px;
+        text-align: center;
+    }
+    tr:hover {
+        background-color: gray;
+    }
+    th:hover {
+        background-color: bisque;
+    }
+</style>
+</head>
+<body>
+    <h2>Cellspading
+        <br>
+        - Farrelyno Putra
+    </h2>
+    <table class="table-1">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Farrelyno</td>
+            <td>Putra</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Makoto</td>
+            <td>Shinkai</td>
+            <td>51</td>
+        </tr>
+        <tr>
+            <td>Julius</td>
+            <td>Novachrono</td>
+            <td>999</td>
+        </tr>
+    </table>
+</body>
