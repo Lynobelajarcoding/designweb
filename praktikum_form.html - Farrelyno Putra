@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    .form-nama label{
+        margin-left: 10px;
+    }
+
+    .form-nama input{
+        margin-left: 67px;
+    }
+
+    .form-alamat label{
+        margin-left: 10px;
+        position: absolute; top: 85px;
+    }
+
+    .form-alamat textarea{
+        margin-left: 120px;
+    }
+
+    .form-TTL label{
+        margin-left: 10px;
+    }
+
+    .form-TTL-input1{
+        margin-left: 120px;
+        position: absolute; top: 162px;
+    }
+
+    .form-TTL-input2{
+        margin-left: 310px;
+        position: absolute; top: 162px;
+    }
+
+    .form-kelamin label{
+        margin-left: 10px;
+    }
+
+    .form-agama label{
+        margin-left: 10px;
+    }
+
+    .form-agama select{
+        margin-left: 119px;
+        position: absolute; left: 10px;
+    }
+
+    .form-hobi label{
+        margin-left: 10px;
+    }
+
+    .form-hobi input{
+        margin-left: 75px;
+    }
+
+    .form-motto label{
+        margin-left: 10px;
+        position: absolute; top: 355px;
+    }
+    
+    .form-motto textarea{
+        margin-left: 121px;
+    }
+
+    .button-reset input{
+        margin-left: 10px;
+        position: absolute; left: 120px;
+    }
+
+    .button-simpan input{
+        margin-left: 70px;
+        position: absolute; top: 434px;
+        position: absolute; left: 120px;
+    }
+
+    .form-titik1 {
+        position: absolute; left: 113px;
+        position: absolute; top: 9px;
+    }
+
+    .form-titik2 {
+        position: absolute; left: 113px;
+        position: absolute; top: 84px;
+    }
+
+    .form-titik3 {
+        position: absolute; left: 113px;
+        position: absolute; top: 163px;
+    }
+
+    .form-titik4 {
+        position: absolute; left: 113px;
+        position: absolute; top: 240px;
+    }
+
+    .form-titik5 {
+        position: absolute; left: 113px;
+        position: absolute; top: 275px;
+    }
+
+    .form-titik6 {
+        position: absolute; left: 113px;
+        position: absolute; top: 354px;
+    }
+
+</style>
+<body>
+    <form class="form-nama">
+        <label for="Nama" id="Nama Anda" value="Nama Anda">Nama</label>
+        <input type="text" value="Farrelyno"><br><br>
+    </form>
+    <form class="form-titik1">
+        <label for="Nama" id="Nama Anda" value="Nama Anda">:</label>
+    </form>
+    <form class="form-alamat">
+        <label for="alamat" id="Alamat Anda" value="Alamat Anda">Alamat</label>
+        <textarea name="alamat" id="Alamat Anda" cols="25" rows="6" placeholder="Masukkan Alamat Anda"></textarea><br><br>
+    </form>
+    <form class="form-titik2">
+        <label for="alamat" id="Alamat Anda" value="Alamat Anda">:</label>
+    </form>
+    <form class="form-TTL">
+        <label for="TTL" id="Tempat Tanggal Lahir Anda" value="TTL Anda">TTL</label>
+    </form>
+    <form class="form-titik3">
+        <label for="TTL" id="Tempat Tanggal Lahir Anda" value="TTL Anda">:</label>
+    </form>
+    <form class="form-TTL-input1">
+        <input type="text">
+    </form>
+    <form class="form-TTL-input2">
+        <input type="date"><br><br>
+    </form>
+    <br>
+    <form class="form-kelamin">
+        <label for="Jenis Kelamin" id="Kelamin">Jenis Kelamin :</label>
+        <input type="radio" id="Kelamin" name="kelamin">Laki Laki
+        <input type="radio" id="Kelamin" name="kelamin">Perempuan
+    </form>
+    <br>
+    <form class="form-titik4">
+        <label for="Agama" id="Agama">:</label>
+    </form>
+    <form class="form-agama">
+        <label for="Agama" id="Agama">Agama</label>
+        <select id="Agama">
+            <option value="Islam">Islam</option>
+            <option value="Islam">Kristen</option>
+            <option value="Islam">Hindu</option>
+            <option value="Islam">katolik</option>
+            <option value="Islam">Konghucu</option>
+        </select>
+    </form>
+        <br>
+    <form class="form-titik5">
+        <label for="Hobi" id="Hobi Anda">:</label>
+    </form>
+    <form class="form-hobi">
+        <label for="Hobi" id="Hobi Anda">Hobi</label>
+        <input type="checkbox" id="Hobi Anda">Olahraga
+        <input type="checkbox" id="Hobi Anda">Mendengarkan Musik
+        <input type="checkbox" id="Hobi Anda">Gitar
+        <input type="checkbox" id="Hobi Anda">Piano
+        <input type="checkbox" id="Hobi Anda">Bermain Game
+    </form>
+        <br>
+    <form class="form-titik6">
+        <label>:</label>
+    </form>
+    <form class="form-motto">
+        <label>Motto</label>
+        <textarea name="motto anda" id="Motto" cols="25" rows="6" placeholder="Masukkan Motto Anda"></textarea>
+        <br><br>
+    </form>
+    <form class="button-reset">
+        <form action="praktikum_form.html">
+        <input type="submit" value="Reset">
+    </form>
+    <br>
+    <form class="button-simpan">
+        <form action="lanjutan_simpan.html">
+        <input type="submit" value="Simpan"><br>
+    </form>
+</body>
+</html>
