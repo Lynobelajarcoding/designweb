@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>form</title>
+<style>
+    
+</style>
+</head>
+<body>
+
+<fieldset>
+    <legend>BIODATA</legend>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td class="label">Nama</td>
+                <td> : </td>
+                <td><input type="text" id="nama" name="nama"></td>
+            </tr>
+            <tr>
+                <td class="label">Alamat</td>
+                <td> : </td>
+                <td><textarea name="Alamat"></textarea></td>
+            </tr>
+            <tr>
+                <td class="label">Tempat</td>
+                <td> : </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="label">Tanggal Lahir</td>
+                <td> : </td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td> : </td>
+                <td><input type="radio" id="pria" name="jenis_kelamin" value="Pria">
+                    <label for="pria">Pria</label>
+                    <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita">
+                    <label for="wanita">Wanita</label></td>
+            </tr>
+            <tr>
+                <td><label for="agama">Agama</label></td>
+                <td> : </td>
+                <td><select id="agama" name="agama" required>
+                    <option value="">Pilih Agama</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                    <option value="Lainnya">Lainnya</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td> : </td>
+                <td><input type="checkbox"><label for="html">Olahraga</label>
+                    <input type="checkbox"><label for="html">Basket</label>
+                    <input type="checkbox"><label for="html">Drift</label>
+                    <input type="checkbox"><label for="html">Bermain Game</label></td>
+            </tr>
+            <tr>
+                <td>Motto</td>
+                <td> : </td>
+                <td><textarea placeholder="isikan motto anda disini"></textarea></td>
+            </tr>
+            <tr>
+                <td><a href="#blank"></a><button type="submit">Submit</button>
+                <input type="reset"></td>
+            </tr>
+        </table><br>
+    </form>
+</fieldset>
+</body>
+</html>

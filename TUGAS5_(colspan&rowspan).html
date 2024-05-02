@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colspan & rowspan</title>
+</head>
+    <style>
+        #Nama {
+            font-family: arial;
+            border-collapse: collapse;
+            border: 2px;
+            padding: 2px;
+        }
+        #Rapot {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #Rapot th {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        #Rapot1 td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        #Rapot td {
+            border: 2px solid black;
+            padding: 8px;
+        }
+    </style>
+
+<body>
+    <h2>Laporan Nilai Mahasiswa STIKOM</h2>
+    <table id="Rapot">
+        <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">Mahasiswa</th>
+            <th rowspan="2">SKS</th>
+            <th colspan="4">Pengetahuan</th>
+            <th rowspan="2">Total Nilai</th>
+        </tr>
+
+        <tr id="Rapot1">
+            <td>UTS</td>
+            <td>Predikat</td>
+            <td>UAS</td>
+            <td>Predikat</td>
+        </tr>
+
+        <tr>
+            <td colspan="8">SP 2.1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Farrelyno Luhur Priyambodo Putra</td>
+            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">80</td>
+            <td style="text-align: center;">AB</td>
+            <td style="text-align: center;">80</td>
+            <td style="text-align: center;">AB</td>
+            <td style="text-align: center;">AB</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Muhammad Riyo Nicholas Saputra</td>
+            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">95</td>
+            <td style="text-align: center;">A</td>
+            <td style="text-align: center;">85</td>
+            <td style="text-align: center;">AB</td>
+            <td style="text-align: center;">A</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Erdiyanto Luthfi Susilo</td>
+            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">75</td>
+            <td style="text-align: center;">B</td>
+            <td style="text-align: center;">80</td>
+            <td style="text-align: center;">AB</td>
+            <td style="text-align: center;">B</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Kiky Restu Noviansyah</td>
+            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">80</td>
+            <td style="text-align: center;">AB</td>
+            <td style="text-align: center;">80</td>
+            <td style="text-align: center;">AB</td>
+            <td style="text-align: center;">AB</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Dandi Ajusta Dharmaputra Samudra</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">80</td>
+            <td style="text-align: center;">B</td>
+            <td style="text-align: center;">90</td>
+            <td style="text-align: center;">A</td>
+            <td style="text-align: center;">AB</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Lukman Hairomin</td>
+            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">70</td>
+            <td style="text-align: center;">B</td>
+            <td style="text-align: center;">65</td>
+            <td style="text-align: center;">BC</td>
+            <td style="text-align: center;">BC</td>
+        </tr>
+
+        <tr>
+            <td colspan="8">SP 2.2</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Pendidikan Agama Islam dan Budi Pekerti</td>
+            <td style="text-align: center;">4</td>
+            <td style="text-align: center;">80</td>
+            <td style="text-align: center;">AB</td>
+            <td style="text-align: center;">80</td>
+            <td style="text-align: center;">AB</td>
+            <td style="text-align: center;">AB</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Pendidikan Pancasila dan Kewarganegaraan</td>
+            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">90</td>
+            <td style="text-align: center;">A</td>
+            <td style="text-align: center;">80</td>
+            <td style="text-align: center;">B</td>
+            <td style="text-align: center;">AB</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Bahasa Indonesia</td>
+            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">70</td>
+            <td style="text-align: center;">B</td>
+            <td style="text-align: center;">80</td>
+            <td style="text-align: center;">AB</td>
+            <td style="text-align: center;">AB</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Sejarah Indonesia</td>
+            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">60</td>
+            <td style="text-align: center;">BC</td>
+            <td style="text-align: center;">80</td>
+            <td style="text-align: center;">AB</td>
+            <td style="text-align: center;">B</td>
+        </tr>
+    </table>
+</body>
+</html>
