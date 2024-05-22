@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+h1{
+    font-weight: 100;
+    text-shadow: 1px 0px 5px white;
+    text-align: center;
+    position:relative;top:87px
+}
+.h1-pertama{
+    color: aqua;
+}
+.h1-kedua{
+    color: beige;
+}
+.h1-ketiga{
+    color: blueviolet;
+}
+.h1-keempat{
+    color: brown;
+}
+.h1-kelima{
+    color: crimson;
+}
+.h1-keenam{
+    color: darkgoldenrod;
+}
+.h1-ketujuh{
+    color: greenyellow;
+}
