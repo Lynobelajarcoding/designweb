@@ -1,0 +1,102 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.element{
+    animation: looping-color 2s linear infinite;
+}
+@keyframes looping-color {
+    0% {
+        background-color: aqua;
+      }
+    25% {
+        background-color: burlywood;
+    }
+    50% {
+        background-color: forestgreen;
+    }
+    75% {
+        background-color: indigo;
+    }
+    100% {
+        background-color: aqua;
+    }
+}
+
+.transitions{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    transition: 0.8s;
+    background-color: blue;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.transitions:hover{
+    animation: looping-transition 6s linear infinite;
+}
+@keyframes looping-transition {
+    0% {
+        width: 100%;
+        height: 100px;
+      }
+    50% {
+        width: 100%;
+        height: 420px;
+    }
+    100% {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+.transformations{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    animation: looping-transform 7s linear infinite;
+}
+
+@keyframes looping-transform {
+    0% {
+        transform: rotatex(0deg);
+      }
+    50% {
+        transform: rotatey(360deg);
+    }
+    100% {
+      transform: rotatey(0deg);
+
+    }
+}
+.animations{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    animation: looping-animation 6s linear infinite;
+    border-radius: 50%;
+}
+@keyframes looping-animation {
+    0% {
+        transform: rotateZ(0deg);
+        position: relative; left: 0%;
+      }
+    50% {
+        transform: rotateZ(360deg);
+        position: relative; left: 92%;
+    }
+    100% {
+      transform: rotateZ(0deg);
+      position: relative; left: 0%;
+    }
+}
