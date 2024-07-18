@@ -1,0 +1,40 @@
+$myColor : pink;
+$myFont1 : arial;
+$myFont2 : impact;
+$myFont3 : helvetica;
+$myFont4 : georgia;
+
+@import 'template1';
+
+@mixin teks1 {
+    color: purple;
+    font-size: 20px;
+    font-family: $myFont3;
+}
+
+@mixin teks2 {
+    color: brown;
+    font-size: 30px;
+    font-family: $myFont4;
+}
+
+.teks{
+    text-align: center;
+    margin-top: 250px;
+    h1{
+        color: $myColor;
+        font-size: 20px;
+        font-family: $myFont1;
+    }
+    h2{
+        color: aqua;
+        font-size: 20px;
+        font-family: $myFont2;
+    }
+    h3{
+        @include teks1
+    }
+    h4{
+        @include teks2
+    }
+}
