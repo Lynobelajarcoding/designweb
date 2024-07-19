@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: #2e2f34;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #2e2f34;
+    color: #7c684a;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.header-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: #7c684a;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar-link {
+    color: #2e2f34;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: #2e2f34;
+    color: #7c684a;
+}
+
+.content {
+    padding: 20px 0;
+}
+
+.section-title1 {
+    color: #7c684a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-section {
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.column {
+    flex: 1;
+    background-color: #7c684a;
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 8px;
+}
+
+.article-img {
+    width: 270px;
+    transition: width 0.7s ease;
+}
+
+.row:hover .article-img {
+    width: 270px;
+}
+
+@keyframes pulseOut {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.column h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.article-img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.article-content {
+    font-size: 16px;
+}
+
+.about-section {
+    background-color: #7c684a;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    font-size: 17.6px;
+}
+
+.footer {
+    background-color: #7c684a;
+    color: #2e2f34;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 14.4px;
+}
+
+@media screen and (max-width: 696px){
+    .row{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1041px){
+    .row{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/*subpages*/
+
+aside {
+    color: #7c684a;
+    background-color: #2e2f34;
+    font-size: 35px;
+    padding: 35px 0 0 35px;
+    border-radius: 35px 0 0 35px;
+    position: relative; left: 926px;
+}
+
+.subpage1 {
+    background-color: #7c684a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    overflow: hidden; /* Hide overflow to prevent horizontal scrollbar */
+    position: relative; /* Ensure relative positioning for absolute positioning */
+}
+
+.subpage1 img {
+    width: 296.2px;
+    bottom: 0.3px;
+    border-radius: 0 35px 35px 0;
+    position: relative;
+    left: 0;
+    transition: left 1.3s ease;
+    z-index: 1; /* Ensure the image is above the text */
+}
+
+.subpage1:hover img {
+    left: 390px; /* Move the image slowly to the right on hover */
+    z-index: 2; /* Increase z-index on hover to ensure it's above the text */
+}
+
+.subpage1 .expand-text {
+    background-color: #2e2f34;
+    width: 400px;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    left: -300px; /* Initially position outside the container */
+    transition: left 1.3s ease, opacity 0.3s ease; /* Smooth transition for left position and opacity */
+    z-index: 0; /* Ensure the text is behind the image */
+    opacity: 1; /* Initially hide the text */
+    
+    /* Center vertically */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.subpage1:hover .expand-text {
+    left: 0; /* Move the text to the left to reveal it on hover */
+    opacity: 1; /* Show the text */
+}
+
