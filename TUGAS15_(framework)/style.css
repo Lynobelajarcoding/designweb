@@ -1,0 +1,50 @@
+section {
+    background-color: #0d6efd;
+    padding: 0 auto;
+}
+
+.section-title {
+    color: #f2f2f2
+    ;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    .card-title {
+        color: #001f3f;
+    }
+    b {
+        color: #001f3f;
+    }
+}
+
+nav {
+    .navbar-brand {
+        display: flex;
+        font-size: 12px;
+        padding-left: 15px;
+        color: #fdcc0d;
+    }
+    a {
+        color: #fdcc0d;
+    }
+    .btn {
+        color: #fdcc0d;
+        background-color: white;
+    }
+    .btn:hover {
+        color: white;
+        background-color: #fdcc0d;
+    }
+    .btn:hover::after {
+        color: white;
+        background-color: #fdcc0d;
+    }
+}
